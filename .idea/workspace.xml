@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_01_ReverseNumbersWithStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_02_BasicStackOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_03_MaximumElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_04_BasicQueueOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_01_ReverseNumbersWithStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_01_ReverseNumbersWithStack.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
