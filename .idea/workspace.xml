@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="">
+    <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_01_ReverseNumbersWithStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +17,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_02_SimpleCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="17" selection-start-line="14" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,13 +36,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_04_MatchingBrackets.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -51,32 +57,6 @@
               <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="01. Stacks and Queues - Lab" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="01. Stacks and Queues - Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="01. Stacks and Queues - Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="01. Stacks and Queues - Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -86,6 +66,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -118,11 +99,19 @@
       <option name="project" value="LOCAL" />
       <updated>1590084537580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1590084713377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590084713377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -131,6 +120,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -139,7 +129,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.328594" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -164,9 +154,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_01_BrowserHistory.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_02_SimpleCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="272">
+          <caret line="17" column="17" selection-start-line="14" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
