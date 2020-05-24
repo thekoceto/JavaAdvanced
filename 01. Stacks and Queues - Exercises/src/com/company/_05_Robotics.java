@@ -51,22 +51,18 @@ public class _05_Robotics {
         long s = seconds % 60;
         long m = (seconds / 60) % 60;
         long h = (seconds / (60 * 60)) % 24;
-        System.out.print("[");
-        if (h < 10) System.out.print("0");
-        System.out.print(h);
-        System.out.print(":");
-        if (m < 10) System.out.print("0");
-        System.out.print(m);
-        System.out.print(":");
-        if (s < 10) System.out.print("0");
-        System.out.print(s);
-        System.out.println("]");
 
-//        return String.format("[%02d:%02d:%02d]", h, m, s);
-//        return  "[" + (h > 10 ? h :  "0" + h) +
-//                ":" + (m > 10 ? h :  "0" + m) +
-//                ":" + (s > 10 ? h :  "0" + s) +
-//                "]";
+
+//        System.out.print("[");
+//        if (h < 10) System.out.print("0");
+//        System.out.print(h);
+//        System.out.print(":");
+//        if (m < 10) System.out.print("0");
+//        System.out.print(m);
+//        System.out.print(":");
+//        if (s < 10) System.out.print("0");
+//        System.out.print(s);
+//        System.out.println("]");
     }
 
     static class Robot {

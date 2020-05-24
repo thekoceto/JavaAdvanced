@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_06_BalancedParentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_07_RecursiveFibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_08_SimpleTextEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics.java" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_01_BrowserHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="23" selection-start-line="8" selection-end-line="9" />
+            <state relative-caret-position="136">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -52,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_06_HotPotato.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-17">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,7 +266,7 @@
     <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_06_HotPotato.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -283,8 +289,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01. Stacks and Queues - Lab/src/com/company/_01_BrowserHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="23" selection-start-line="8" selection-end-line="9" />
+        <state relative-caret-position="136">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
