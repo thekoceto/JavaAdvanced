@@ -50,8 +50,9 @@ public class _05_Robotics {
     private static void printTime(long seconds) {
         long s = seconds % 60;
         long m = (seconds / 60) % 60;
-        long h = (seconds / (60 * 60)) % 24;
+        long h = (seconds / 3600) % 24;
 
+        System.out.print( String.format("%02d:%02d:%02d", h, m, s));
 
 //        System.out.print("[");
 //        if (h < 10) System.out.print("0");

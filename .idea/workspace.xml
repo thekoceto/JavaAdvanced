@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_06_BalancedParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_07_RecursiveFibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_08_SimpleTextEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics.java" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/01. Stacks and Queues - Exercises/src/com/company/_05_Robotics_1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

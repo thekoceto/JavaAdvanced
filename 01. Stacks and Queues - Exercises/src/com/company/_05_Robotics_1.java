@@ -15,6 +15,7 @@ public class _05_Robotics_1 {
         int[] inputTime = Arrays.stream(console.nextLine().split(":"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
+
         int time = inputTime[0] * 3600 + inputTime[1] * 60 + inputTime[2];
 
         ArrayDeque<String> products = new ArrayDeque<>();
@@ -27,7 +28,7 @@ public class _05_Robotics_1 {
         while (!products.isEmpty()) {
 
             for (Robot robot : robots)
-                robot.decreaseWorkingTime();
+                robot.decreaseWorkingTimeBy1();
 
             time++;
 
@@ -48,12 +49,12 @@ public class _05_Robotics_1 {
         }
     }
 
-    private static String getTime(int time) {
-        int hours = time / 3600 % 24;
-        int mins = time / 60 % 60;
-        int seconds = time % 60;
+    private static String getTime(int seconds) {
+        int h = seconds / 3600 % 24;
+        int m = seconds / 60 % 60;
+        int s = seconds % 60;
 
-        return String.format("%02d:%02d:%02d",hours,mins,seconds);
+        return String.format("%02d:%02d:%02d", h, m, s);
     }
     static class Robot {
         private String robotName;
@@ -66,7 +67,7 @@ public class _05_Robotics_1 {
             this.workTime = 0;
         }
 
-        void decreaseWorkingTime() {
+        void decreaseWorkingTimeBy1() {
             if (--this.workTime < 0)
                 this.workTime = 0;
         }
