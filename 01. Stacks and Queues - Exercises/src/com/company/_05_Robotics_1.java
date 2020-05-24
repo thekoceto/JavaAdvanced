@@ -16,7 +16,7 @@ public class _05_Robotics_1 {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-        int time = inputTime[0] * 3600 + inputTime[1] * 60 + inputTime[2];
+        int seconds = inputTime[0] * 3600 + inputTime[1] * 60 + inputTime[2];
 
         ArrayDeque<String> products = new ArrayDeque<>();
 
@@ -30,13 +30,13 @@ public class _05_Robotics_1 {
             for (Robot robot : robots)
                 robot.decreaseWorkingTimeBy1();
 
-            time++;
+            seconds++;
 
             String currentItem = products.poll();
             boolean isTaken = false;
             for (Robot robot : robots) {
                 if (robot.workTime == 0) {
-                    System.out.printf("%s - %s [%s]%n",robot.robotName,currentItem,getTime(time));
+                    System.out.printf("%s - %s [%s]%n",robot.robotName,currentItem,getTime(seconds));
                     robot.setWorkTime();
                     isTaken = true;
                     break;
@@ -56,6 +56,7 @@ public class _05_Robotics_1 {
 
         return String.format("%02d:%02d:%02d", h, m, s);
     }
+
     static class Robot {
         private String robotName;
         private int processTime;
@@ -71,6 +72,7 @@ public class _05_Robotics_1 {
             if (--this.workTime < 0)
                 this.workTime = 0;
         }
+
         void setWorkTime() {
             this.workTime = this.processTime;
         }
