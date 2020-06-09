@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_08_TheHeiganDance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_01_UniqueUsernames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_02_SetsOfElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_03_PeriodicTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_04_CountSymbols.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_05_Phonebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_06_AMinerTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_07_FixEmails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_08_HandsOfCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Exercises/src/com/company/_09_UserLogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Lab/src/com/company/_01_ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03. Sets And Maps Advanced - Lab/src/com/company/_02_SoftUniParty.java" afterDir="false" />
+    <list default="true" id="b54e12c5-0cd6-4eb0-9c6e-cf1d7c3aa310" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_04_MaximalSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_04_MaximalSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_07_Crossfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_07_Crossfire.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +27,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_07_Crossfire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="-204">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
@@ -136,32 +119,6 @@
               <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="03. Sets And Maps Advanced - Lab" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="03. Sets And Maps Advanced - Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="03. Sets And Maps Advanced - Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java Advanced" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java Advanced" type="462c0819:PsiDirectoryNode" />
-              <item name="03. Sets And Maps Advanced - Lab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590084713377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1591563310702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591563310702</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -405,7 +369,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02. Multidimensional Arrays - Exercises/src/com/company/_07_Crossfire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="-204">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
