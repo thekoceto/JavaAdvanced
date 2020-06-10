@@ -38,10 +38,3 @@ public class _10_PopulationCounter {
                 });
     }
 }
-//UK (total population: 4)
-//=>London: 4
-//Bulgaria (total population: 3)
-//=>Veliko Tarnovo: 2
-//=>Sofia: 1
-//Italy (total population: 3)
-//=>Rome: 3
