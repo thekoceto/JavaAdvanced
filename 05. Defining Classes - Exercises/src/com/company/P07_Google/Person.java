@@ -7,7 +7,7 @@ public class Person {
     //•	"<Name> pokemon <pokemonName> <pokemonType>"
     //•	"<Name> parents <parentName> <parentBirthday>"
     //•	"<Name> children <childName> <childBirthday>"
-    //•	"<Name> car <carModel> <carSpeed>"                       - unique
+    //•	"<Name> car <carModel> <carSpeed>"                      - unique
     //
     private Company company;
     private List<Pokemon> pokemons;

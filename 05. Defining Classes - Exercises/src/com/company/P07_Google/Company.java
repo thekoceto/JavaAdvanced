@@ -6,7 +6,7 @@ public class Company {
     private String department;
     private double salary;
 
-    public Company(String companyName, String department, Double salary) {
+    Company(String companyName, String department, Double salary) {
         this.companyName = companyName;
         this.department = department;
         this.salary = salary;

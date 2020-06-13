@@ -17,6 +17,7 @@ public class Main {
             String[] token = console.readLine().split("\\s+");
             String model = token[0];
             int power = Integer.parseInt(token[1]);
+
             if (token.length==2)
                 engines.put(token[0], new Engine(model, power));
             else if (token.length == 3){

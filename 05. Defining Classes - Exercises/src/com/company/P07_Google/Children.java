@@ -2,10 +2,10 @@ package com.company.P07_Google;
 
 public class Children {
     //•	"<Name> children <childName> <childBirthday>"
-    String childName;
-    String childBirthday;
+    private String childName;
+    private String childBirthday;
 
-    public Children(String childName, String childBirthday) {
+    Children(String childName, String childBirthday) {
         this.childName = childName;
         this.childBirthday = childBirthday;
     }

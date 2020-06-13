@@ -2,8 +2,8 @@ package com.company.P07_Google;
 
 public class Parents {
     //•	"<Name> parents <parentName> <parentBirthday>"
-    String parentName;
-    String parentBirthday;
+    private String parentName;
+    private String parentBirthday;
 
     public Parents(String parentName, String parentBirthday) {
         this.parentName = parentName;
