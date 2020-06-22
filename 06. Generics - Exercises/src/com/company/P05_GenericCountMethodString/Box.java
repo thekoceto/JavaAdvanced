@@ -1,19 +1,19 @@
 package com.company.P05_GenericCountMethodString;
 
-public class Box<E extends Comparable<E>> implements Comparable<E> {
-    private E element;
+public class Box<T extends Comparable<T>>  implements Comparable<T>{
+    private T value;
 
-    public Box(E element) {
-        this.element = element;
+    public Box(T value){
+        this.value = value;
     }
 
-    @Override
-    public int compareTo(E outer){
-        return element.compareTo(outer);
-    }
 
     @Override
-    public String toString() {
-        return this.element.getClass().getName() + ": " + this.element;
+    public int compareTo(T other) {
+        return this.value.compareTo(other);
+    }
+
+    public T getValue(){
+        return value;
     }
 }

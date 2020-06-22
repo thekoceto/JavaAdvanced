@@ -7,7 +7,7 @@ public class _06_PrintDiagonalsOfSquareMatrix {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
-        int n = Integer.parseInt(console.nextLine());
+        int n = Integer.parseInt(console.nextLine())
 
         int [][] m = new int[n][n];
 

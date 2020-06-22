@@ -3,21 +3,42 @@ package com.company.P05_GenericCountMethodString;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(reader.readLine()), count = 0;
-        Box[] boxes = new Box[n];
-        for (int i = 0; i < n; i++)
-            boxes[i] = new Box<>(reader.readLine());
+        List<Box<String>> boxes = new ArrayList<>();
 
-        Box compare = new Box<>(reader.readLine());
-        for (Box box : boxes) {
-            if (box.compareTo(compare)>0)
-                count++;
+        for (int i = 0; i < n ; i++) {
+
+            String line = reader.readLine();
+            boxes.add(new Box(line));
+
         }
-        System.out.println(count);
+
+        String element = reader.readLine();
+
+        int result = countGreaterElements(boxes, new Box<>(element));
+
+        System.out.println(result);
+
+
+    }
+
+    private static <T extends Comparable<T>> int countGreaterElements(List<Box<T>> boxes, Box<T> element) {
+        int counter = 0;
+
+        for (Box<T> box : boxes) {
+            if (box.getValue().compareTo(element.getValue()) > 0) {
+                counter++;
+
+            }
+        }
+
+        return counter;
     }
 }
