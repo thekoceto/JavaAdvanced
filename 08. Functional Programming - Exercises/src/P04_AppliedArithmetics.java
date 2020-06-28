@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class P04_AppliedArithmetics {
@@ -10,38 +11,22 @@ public class P04_AppliedArithmetics {
 
         int[] nums = Arrays.stream(reader.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
 
-        Function<int[], int[]> add = num -> {
-            for (int i = 0; i < nums.length; i++) {
-                nums[i] += 1;
-            }
-            return num;
-        };
-        Function<int[], int[]> multiply = num -> {
-            for (int i = 0; i < nums.length; i++) {
-                nums[i] *= 2;
-            }
-            return num;
-        };
-        Function<int[], int[]> subtract = num -> {
-            for (int i = 0; i < nums.length; i++) {
-                nums[i] -= 1;
-            }
-            return num;
-        };
-
+        Function<int[], int[]> add      = num -> Arrays.stream(num).map(e -> e + 1).toArray();
+        Function<int[], int[]> multiply = num -> Arrays.stream(num).map(e -> e * 2).toArray();
+        Function<int[], int[]> subtract = num -> Arrays.stream(num).map(e -> e - 1).toArray();
+        Consumer<int[]> print = num -> Arrays.stream(num).forEach(e -> System.out.print(e + " "));
         String line;
         while (!"end".equals(line = reader.readLine())){
 
             if (line.equals("add")){
-                add.apply(nums);
+                nums = add.apply(nums);
             } else if (line.equals("multiply")){
-                multiply.apply(nums);
+                nums = multiply.apply(nums);
             } else if (line.equals("subtract")){
-                subtract.apply(nums);
+                nums = subtract.apply(nums);
             } else if (line.equals("print")){
-                for (int i = 0; i < nums.length; i++) {
-                    System.out.print(nums[i] + " ");
-                }
+                print.accept(nums);
+                System.out.println();
             }
         }
     }

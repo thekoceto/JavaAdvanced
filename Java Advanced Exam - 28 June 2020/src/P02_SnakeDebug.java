@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class P02_SnakeFinal {
+public class P02_SnakeDebug {
     private static final char snakeHead = 'S';
     private static final char snakeTail = '.';
     private static final char burrow = 'B';
@@ -23,7 +23,7 @@ public class P02_SnakeFinal {
                 bomb = new int[]{i, row.indexOf(snakeHead)};
         }
         matrix[bomb[0]][bomb[1]] = snakeTail;
-
+        int steps = 1;
         boolean isValidIndex = true;
 
         while (eatenFood < 10) {
@@ -32,18 +32,23 @@ public class P02_SnakeFinal {
                 case "up":
                     if (isValidIndex = indexValidation(size, bomb[0] - 1, bomb[1]))
                         bomb[0]--;
+                    System.out.println(steps++ + ") up   ");
                     break;
                 case "down":
                     if (isValidIndex = indexValidation(size, bomb[0] + 1, bomb[1]))
                         bomb[0]++;
+                    System.out.println(steps++ + ") down ");
                     break;
                 case "left":
                     if (isValidIndex = indexValidation(size, bomb[0], bomb[1] - 1))
                         bomb[1]--;
+                    System.out.println(steps++ + ") left ");
+
                     break;
                 case "right":
                     if (isValidIndex = indexValidation(size, bomb[0], bomb[1] + 1))
                         bomb[1]++;
+                    System.out.println(steps++ + ") right");
                     break;
             }
             if (!isValidIndex)
@@ -60,6 +65,7 @@ public class P02_SnakeFinal {
                 eatenFood++;
 
             matrix[bomb[0]][bomb[1]] = snakeTail;
+            System.out.println(print(matrix));
         }
 
         StringBuilder print = new StringBuilder();
@@ -81,7 +87,16 @@ public class P02_SnakeFinal {
         }
         System.out.println(print.toString());
     }
+    private static String print (char[][]matrix){
+        StringBuilder print = new StringBuilder();
 
+        for (char[] row : matrix) {
+            for (char ch : row)
+                print.append(ch);
+            print.append(System.lineSeparator());
+        }
+        return print.toString();
+    }
     private static boolean indexValidation(int size, int row, int col) {
         return row >= 0 && row < size && col >= 0 && col < size;
     }
