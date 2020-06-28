@@ -24,29 +24,29 @@ public class P02_SnakeFinal {
         }
         matrix[bomb[0]][bomb[1]] = snakeTail;
 
-        boolean validIndex = true;
+        boolean isValidIndex = true;
 
         while (eatenFood < 10) {
 
             switch (reader.readLine()) {
                 case "up":
-                    if (validIndex = checkForValidIndex(size, bomb[0] - 1, bomb[1]))
+                    if (isValidIndex = indexValidation(size, bomb[0] - 1, bomb[1]))
                         bomb[0]--;
                     break;
                 case "down":
-                    if (validIndex = checkForValidIndex(size, bomb[0] + 1, bomb[1]))
+                    if (isValidIndex = indexValidation(size, bomb[0] + 1, bomb[1]))
                         bomb[0]++;
                     break;
                 case "left":
-                    if (validIndex = checkForValidIndex(size, bomb[0], bomb[1] - 1))
+                    if (isValidIndex = indexValidation(size, bomb[0], bomb[1] - 1))
                         bomb[1]--;
                     break;
                 case "right":
-                    if (validIndex = checkForValidIndex(size, bomb[0], bomb[1] + 1))
+                    if (isValidIndex = indexValidation(size, bomb[0], bomb[1] + 1))
                         bomb[1]++;
                     break;
             }
-            if (!validIndex)
+            if (!isValidIndex)
                 break;
             if (matrix[bomb[0]][bomb[1]] == burrow) {
                 matrix[bomb[0]][bomb[1]] = snakeTail;
@@ -60,8 +60,10 @@ public class P02_SnakeFinal {
             }
             matrix[bomb[0]][bomb[1]] = snakeTail;
         }
+
         StringBuilder print = new StringBuilder();
-        if (validIndex)
+
+        if (isValidIndex)
             matrix[bomb[0]][bomb[1]] = snakeHead;
         else
             print.append("Game over!").append(System.lineSeparator());
@@ -79,7 +81,7 @@ public class P02_SnakeFinal {
         System.out.println(print.toString());
     }
 
-    private static boolean checkForValidIndex(int size, int row, int col) {
+    private static boolean indexValidation(int size, int row, int col) {
         return row >= 0 && row < size && col >= 0 && col < size;
     }
 }
