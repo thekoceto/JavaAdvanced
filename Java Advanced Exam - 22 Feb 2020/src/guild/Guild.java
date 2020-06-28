@@ -1,70 +1,108 @@
 package guild;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.*;
 
 public class Guild {
-
+    private List<Player> roster;
     private String name;
     private int capacity;
-    private Map<String, Player> roster;
+
+
 
     public Guild(String name, int capacity) {
         this.name = name;
         this.capacity = capacity;
-        roster = new LinkedHashMap<>();
+        this.roster = new ArrayList<>();
+    }
+
+    public List<Player> getRoster() {
+        return this.roster;
+    }
+
+    public void setRoster(List<Player> roster) {
+        this.roster = roster;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
     public void addPlayer(Player player) {
-        if (count() < capacity) {
-            roster.putIfAbsent(player.getName(), player);
+        if (this.count() < this.capacity){
+            this.roster.add(player);
         }
     }
 
     public int count() {
         return roster.size();
     }
-
+    //•   Method removePlayer(String name) - removes a player by given name, if such exists, and returns boolean
     public boolean removePlayer(String name) {
-        return roster.remove(name) != null;
-    }
-
-    public void promotePlayer(String name) {
-        roster.computeIfPresent(name, Guild::promotePlayer);
-    }
-
-    private static Player promotePlayer(String name, Player player) {
-        player.setRank("Member");
-        return player;
-    }
-
-    public void demotePlayer(String name) {
-        roster.computeIfPresent(name, Guild::demotePlayer);
-    }
-
-    private static Player demotePlayer(String name, Player player) {
-        player.setRank("Trial");
-        return player;
-    }
-
-    public Player[] kickPlayersByClass(String clazz) {
-        Player[] removed = roster.values().stream()
-                .filter(player -> clazz.equals(player.getClazz()))
-                .toArray(Player[]::new);
-
-        for (Player player : removed) {
-            roster.remove(player.getName());
+        for (Player player : roster) {
+            if (player.getName().equals(name))
+                return roster.remove(player);
         }
-
-        return removed;
+        return false;
     }
+    //promote (set his rank to "Member") the first player with the given name. If the player is already a "Member", do nothing.
+    public void promotePlayer(String name) {
+        for (Player player : this.roster) {
+            if (player.getName().equals(name)) {
+                player.setRank("Member");
+                break;
+            }
+        }
+    }
+
+    public void demotePlayer(String name){
+        for (Player player : roster) {
+            if (player.getName().equals(name)) {
+                player.setRank("Trial");
+                break;
+            }
+        }
+    }
+    //•   Method kickPlayersByClass(String clazz) - removes all the players by the given class and returns all removed players from that class as an array
+    public Player[] kickPlayersByClass(String clazz) {
+
+        ArrayList<Player> list = new ArrayList<>();
+        for (Player pl : roster) {
+            if (pl.getClazz().equals(clazz)){
+                list.add(pl);
+            }
+        }
+        Player[] players = new Player[list.size()];
+        for (int i = 0; i < players.length; i++) {
+            players[i] = list.get(i);
+            roster.remove(list.get(i));
+        }
+        return players;
+    }
+
 
     public String report() {
-        return String.format(
-                "Players in the guild: %s:%n%s", name,
-                roster.values().stream()
-                        .map(Player::toString)
-                        .collect(Collectors.joining(System.lineSeparator())));
+        //Players in the guild: {guildName}:
+        //{Player1}
+        //{Player2}
+        //(…)"
+        StringBuilder sb = new StringBuilder();
+        for (Player player : roster) {
+            sb.append(player);
+            sb.append(System.lineSeparator());
+        }
+        return "Players in the guild: " + this.name  + ":" + System.lineSeparator() + sb.toString().trim();
+
     }
 }

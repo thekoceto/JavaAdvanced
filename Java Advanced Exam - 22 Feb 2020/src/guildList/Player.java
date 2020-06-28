@@ -1,10 +1,10 @@
-package guild;
+package guildList;
 
 public class Player {
     private String name;
     private String clazz;
-    private String rank;
-    private String description;
+    private String rank;//  "Trial"
+    private String description;  // "n/a"
 
     public Player(String name, String clazz) {
         this.name = name;
@@ -12,7 +12,6 @@ public class Player {
         this.rank = "Trial";
         this.description = "n/a";
     }
-
 
     public String getName() {
         return name;
@@ -48,8 +47,8 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player " + this.name + ": " + clazz + System.lineSeparator() +
-                "Rank: " + this.rank + System.lineSeparator() +
-                "Description: " + this.description;
+        return ("Player " + name + ": " + clazz + System.lineSeparator() +
+                "Rank: " + rank + System.lineSeparator() +
+                "Description: " + description).trim();
     }
 }

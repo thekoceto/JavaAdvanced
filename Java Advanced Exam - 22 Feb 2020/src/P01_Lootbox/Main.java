@@ -24,12 +24,14 @@ public class Main {
         int loot = 0;
         while (!first.isEmpty() && !second.isEmpty()){
             if ((first.peekFirst()+second.peekLast())%2==0)
-                loot += first.pollFirst()+second.pollLast();
+                loot += (first.pollFirst()+second.pollLast());
             else
                 first.addLast(second.pollLast());
         }
-        if (first.isEmpty()) System.out.println("First lootbox is empty");
-        if (second.isEmpty()) System.out.println("Second lootbox is empty");
+        if (first.isEmpty())
+            System.out.println("First lootbox is empty");
+        if (second.isEmpty())
+            System.out.println("Second lootbox is empty");
         System.out.println((loot>100? "Your loot was epic! Value: " : "Your loot was poor... Value: " ) + loot);
     }
 }

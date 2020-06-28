@@ -1,9 +1,9 @@
-package rabbits;
+package rabbits2;
 
 public class Rabbit {
-    private String name;
-    private String species;
-    private boolean available;
+    private final String name;
+    private final String species;
+    private boolean available; // - true
 
     public Rabbit(String name, String species) {
         this.name = name;
@@ -20,7 +20,7 @@ public class Rabbit {
     }
 
     public boolean isAvailable() {
-        return available;
+        return this.available;
     }
 
     public void setAvailable(boolean available) {
@@ -29,6 +29,6 @@ public class Rabbit {
 
     @Override
     public String toString() {
-        return "Rabbit " + "(" + getSpecies() + "): " + getName();
+        return "Rabbit (" + species + "): " + name;
     }
 }

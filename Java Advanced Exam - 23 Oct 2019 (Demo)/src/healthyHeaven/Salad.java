@@ -16,7 +16,9 @@ public class Salad {
         this.products = new ArrayList<>();
     }
     public int getTotalCalories(){
-        return products.stream().mapToInt(Vegetable::getCalories).sum();
+        return products.stream()
+                .mapToInt(Vegetable::getCalories)
+                .sum();
     }
     public int getProductCount(){
         return products.size();

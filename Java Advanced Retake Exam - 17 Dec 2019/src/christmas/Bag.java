@@ -1,20 +1,17 @@
 package christmas;
 
-import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Bag {
     private String color;
     private int capacity;
     private List<Present> data;
 
-
     public Bag(String color, int capacity) {
+        data = new LinkedList<>();
         this.color = color;
         this.capacity = capacity;
-        this.data = new ArrayList<Present>(capacity);
     }
 
     public String getColor() {
@@ -30,35 +27,55 @@ public class Bag {
     }
 
     public void add(Present present) {
-        if (data.size() < capacity) {
+        if (capacity > data.size()) {
             data.add(present);
         }
     }
 
     public boolean remove(String name) {
-        return data.remove(this.getPresent(name));
+        for (Present datum : data) {
+            if (datum.getName().equals(name)) {
+                data.remove(datum);
+                return true;
+            }
+        }
+        return false;
     }
 
     public Present heaviestPresent() {
-        return this.data.stream()
-                .max(Comparator.comparing(Present::getWeight))
-                .orElse(null);
+        double max = Double.MIN_VALUE;
+        String name = "";
+        String gender = "";
+        for (Present datum : data) {
+            if (datum.getWeight() > max) {
+                max = datum.getWeight();
+                name = datum.getName();
+                gender = datum.getGender();
+            }
+        }
+        for (Present datum : data) {
+            if (datum.getWeight()== max && datum.getGender().equals(gender)&& datum.getName().equals(name)){
+                return datum;
+            }
+        }
+        return null;
     }
 
-    public Present getPresent(String name) {
-        return this.data.stream()
-                .filter(customer -> name.equals(customer.getName()))
-                .findAny()
-                .orElse(null);
+    public Present getPresent(String name){
+
+        for (Present datum : data) {
+            if (datum.getName().equals(name)){
+                return datum;
+            }
+        }
+        return null;
+
     }
 
-    public String report() {
-
-        StringBuilder report = new StringBuilder();
-
-        report.append(color).append(" bag contains:").append(System.lineSeparator());
-        this.data.forEach(present -> report.append(present).append(System.lineSeparator()));
-
-        return report.toString().trim();
+    public String report(){
+        String result = this.color+" bag contains:\n";
+        String result1 = data.toString().replaceAll(", ","\n").replaceAll("[\\[\\]]","");
+        return result+result1;
     }
+
 }

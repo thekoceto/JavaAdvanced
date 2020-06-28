@@ -2,7 +2,7 @@ package P00_Test;
 
 import java.util.Scanner;
 
-public class ReVolt {
+public class ReVolt_old {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
